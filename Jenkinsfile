@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/RedolfMahlaule/cloudformation-jenkins-aws.git'
+                git branch: 'master', url: 'https://github.com/RedolfMahlaule/cloudformation-jenkins-aws.git'
             }
         }
         stage('Submit Stack') {
